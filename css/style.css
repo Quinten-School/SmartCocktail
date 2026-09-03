@@ -1,0 +1,84 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+  background-color: lightblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: flex-start; /* boven uitlijnen, zodat titel boven knoppen komt */
+  gap: 20px;
+  padding: 20px;
+  background-color: #003366; 
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Container met titel en menu (kolom) */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+/* Titel boven menu */
+.site-title {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* Navigatieknoppen - lijst horizontaal */
+.top-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* links uitlijnen */
+}
+
+/* Individuele menu-items */
+.top-nav li {
+  position: relative;
+}
+
+/* Knoppen stijl */
+.nav-button {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #1565c0;
+}
+
+ul {
+  list-style-type: decimal;
+}
